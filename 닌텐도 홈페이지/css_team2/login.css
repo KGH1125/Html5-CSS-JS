@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+ 
+}
+
+#nav{
+        height: 50px;
+        width: 100%;
+         background-color: rgb(255, 0, 0);
+        position: fixed;
+        z-index: 999999;
+     }
+footer {
+    height: 200px;
+    clear: both;
+    background-color: rgb(255, 255, 255);
+}
+
+#mainText{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#loginBox {
+    margin: 0px auto;
+    width: 500px;
+    height: 500px;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+  
+}
+
+
+button{
+    width: 400px;
+    height: 50px;
+    background-color: rgb(255, 4, 4);
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(255, 104, 104);
+}
+
+#id {
+    position: absolute;
+    left: 40px;
+    top: 70px;
+    border: 0.4px solid rgb(121, 115, 115);
+    border-radius: 15px;
+    width: 420px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#password {
+    position: absolute;
+    top: 160px;
+    border: 0.4px solid rgb(121, 115, 115);
+    border-radius: 15px;
+    width: 420px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    left: 40px;
+}
+.check{
+    position: absolute;
+    margin-bottom: 10px;
+}
+
+.login-btn{
+    position: relative;
+    /* display: flex; */
+    justify-content:center;
+    bottom: -19%;
+    left: 40px;
+    
+}
+
+#join{
+    position: absolute;
+    width: 300px;
+    font-size: 25px;
+    left: 12%;
+    top: 63%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+   
+}
+
+
+#login {
+    position: absolute;
+    width: 300px;
+    font-size: 25px;
+    left: 12%;
+    top: 13%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+#find2{
+
+  position: relative;
+}
+
+#findId{
+
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    right: 0%;
+    margin: auto;
+    z-index: 3;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#findPw{
+
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#findId:hover{
+    color: rgb(112, 111, 111);
+}
+#findPw:hover{
+    color: rgb(112, 111, 111);
+}
+
+#bottom_p{
+    position: absolute;
+    width: 40%;
+    bottom: 1%;
+    left: 27%;
+}

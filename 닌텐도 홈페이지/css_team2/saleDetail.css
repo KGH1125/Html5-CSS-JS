@@ -1,0 +1,437 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    min-width: 900px;
+}
+
+a {
+    display: block;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+
+
+.big {
+    /* margin-top: 5px; */
+    padding-top: 40px;
+    display: flex;
+    width: 100%;
+    height: 50vw;
+}
+
+.leftsc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    /* background-color: wheat; */
+    height: 90vh;
+}
+
+.upsmall {
+    top: 0%;
+    height: 70%;
+    margin: 1%;
+    border: 1px solid black;
+    /* overflow: hidden; */
+}
+
+.small {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    border: 1px solid black;
+}
+
+.sim {
+    width: 30%;
+    margin: 1%;
+
+}
+
+.sim>img {
+    width: 100%;
+    height: 100%;
+    margin: 1%;
+
+}
+
+.rightsc {
+    width: 50%;
+    /* background-color: wheat; */
+    height: 90vh;
+}
+
+.text1 {
+    padding: 10px;
+    height: 20%;
+}
+
+.text2 {
+    overflow: auto;
+    padding: 20px;
+    height: 40%;
+}
+
+/* .text2>p {
+    margin: auto;
+    margin-left: 2vw;
+    font-size: 2vw;
+} */
+
+.small2 {
+    display: flex;
+    justify-content: space-between;
+    height: 30%;
+}
+
+.small2>button {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: red;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* 이미지 슬라이더 */
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+.slides {
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+
+
+.slides input {
+    display: none;
+}
+
+.slide-container {
+    display: block;
+}
+
+.slide {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.nav {
+    display: flex;
+
+}
+
+.nav label {
+    width: 10%;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+    opacity: 0;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.prev,
+.next {
+    color: #FFF;
+    font-size: 7vh;
+    text-align: center;
+    line-height: 28vw;
+    object-fit: cover;
+}
+
+
+
+.slide:hover+.nav label {
+    opacity: 0.5;
+}
+
+.nav label:hover {
+    opacity: 1;
+}
+
+.nav .next {
+    right: 0;
+}
+
+input:checked+.slide-container .slide {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked+.slide-container .nav label {
+    display: block;
+}
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 1vh;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+input#img-1:checked~.nav-dots label#img-dot-1,
+input#img-2:checked~.nav-dots label#img-dot-2,
+input#img-3:checked~.nav-dots label#img-dot-3,
+input#img-4:checked~.nav-dots label#img-dot-4 {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* 비디오 */
+.vidio {
+    display: none;
+}
+
+.slides {
+    display: block;
+}
+
+nav {
+    min-width: 990px;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(230 0 18);
+    z-index: 900;
+}
+
+.navLogo {
+    padding-top: 5px;
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+.navBtn {
+    width: 10%;
+    height: 100%;
+    transition: transform 0.3s;
+    float: left;
+    text-align: right;
+}
+
+.navTitle {
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+
+.navBigBox {
+    padding-top: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    float: left;
+    padding-left: 15%;
+    padding-right: 10%;
+}
+
+.navMenu1 {
+    width: 30%;
+    height: 100%;
+
+    float: left;
+}
+
+.navMenu2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.navMenu3 {
+    width: 20%;
+    height: 100%;
+
+    float: left;
+}
+
+.navMinBox {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+    float: left;
+}
+
+.navMinBox:hover {
+    transform: scale(1.1);
+}
+
+.limitBox {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: block;
+}
+
+.homeLogo {
+    width: 80%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img_team2/main_img_logo.png);
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.navTitle li {
+    font-size: 20px;
+    color: white;
+    padding-top: 5px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    width: 50%;
+    cursor: default;
+
+}
+
+.navTitle li:first-child {
+    width: 30%;
+}
+
+.navTitle li:last-child {
+    width: 11%;
+}
+
+.navMenu2ul {
+    width: 380px;
+}
+
+.navMenu2ul a {
+    margin: 0;
+    cursor: pointer;
+}
+
+.navMenu2ul>li>span {
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.navMenu2ul>li {
+    margin: 10px;
+    float: left;
+    width: 100px;
+}
+
+
+
+#navMinBox1 {
+    background-image: url(../img_team2/main_img1.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#navMinBox2 {
+    background-image: url(../img_team2/main_img2.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#navMinBox3 {
+    background-image: url(../img_team2/main_img3.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#navMinBox4 {
+    background-image: url(../img_team2/main_img4.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#navMinBox5 {
+    background-image: url(../img_team2/main_img5.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#navMinBox6 {
+    background-image: url(../img_team2/main_img6.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.navhidden {
+    display: none;
+}
+
+.rocatei {
+    transform: rotate(90deg);
+}

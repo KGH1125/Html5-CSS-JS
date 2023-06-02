@@ -1,5 +1,0 @@
-package repositoy;
-
-public interface BoardDAO {
-
-}

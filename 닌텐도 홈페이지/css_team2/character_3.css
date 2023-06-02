@@ -1,0 +1,349 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    display: block;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+body {
+    font-family: 'Nunito', 'Pacifico', sans-serif;
+    min-width: 990px;
+}
+
+
+/* 컨텐츠 시작 */
+
+.banner {
+    height: 400px;
+    width: 100%;
+    background-color: yellowgreen;
+    background-image: url(../img_team2/baner1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* 캐릭터박스 */
+.carea {
+    position: relative;
+    font-family: 'Hahmlet', serif;
+}
+
+.ctxtarea {
+    background-image: url(../img_team2/character3_img_pipe.png);
+    background-size: auto 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+#txtarea {
+    font-family: 'Sigmar', cursive;
+    font-size: 40px;
+    height: 150px;
+    width: 100%;
+}
+
+.chareterBox {
+    cursor: pointer;
+    width: 50%;
+    height: 200px;
+    float: left;
+    position: relative;
+
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 1000px 1000px;
+    }
+}
+
+.moveback {
+    animation: slide 10s linear infinite;
+}
+
+/* 캐릭터박스-이미지 */
+#c1 {
+    background-image: url(../img_team2/character3_img_c1_back.gif);
+}
+
+#c2 {
+    background-image: url(../img_team2/character3_img_c2_back.gif);
+}
+
+#c3 {
+    background-image: url(../img_team2/character3_img_c3_back.gif);
+}
+
+#c4 {
+    background-image: url(../img_team2/character3_img_c4_back.gif);
+}
+
+.cc {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#cimg1 {
+    background-image: url(../img_team2/character3_img_c1.PNG);
+    background-size: auto 180%;
+    background-position: left top;
+}
+
+#cimg2 {
+    background-image: url(../img_team2/character3_img_c2.PNG);
+    background-size: auto 200%;
+    background-position: left top;
+}
+
+#cimg3 {
+    background-image: url(../img_team2/character3_img_c3.PNG);
+    background-size: auto 230%;
+    background-position: left top;
+}
+
+#cimg4 {
+    background-image: url(../img_team2/character3_img_c4.PNG);
+    background-size: auto 150%;
+    background-position: left -60px top;
+}
+
+.ct {
+    top: 0;
+    right: 10%;
+    width: 40%;
+    /* border: 1px solid black; */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-color: aqua; */
+    position: absolute;
+}
+
+#ctxt1 {
+    background-image: url(../img_team2/character3_img_text_MARIO.svg);
+}
+
+#ctxt2 {
+    background-image: url(../img_team2/character3_img_text_LUIGI.svg);
+}
+
+#ctxt3 {
+    background-image: url(../img_team2/character3_img_text_PEACH1.png);
+}
+
+#ctxt4 {
+    background-image: url(../img_team2/character3_img_text_KOOPA.svg);
+}
+
+.ctxtbox {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 95%;
+    height: 380px;
+    border-radius: 20px;
+    /* opacity: 0.5; */
+    overflow: hidden;
+}
+
+.mimg {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+#mimg1 {
+    background-image: url(../img_team2/character3_img_c1.PNG);
+}
+
+#mimg2 {
+    background-image: url(../img_team2/character3_img_c2.PNG);
+}
+
+#mimg3 {
+    background-image: url(../img_team2/character3_img_c3.PNG);
+}
+
+#mimg4 {
+    background-image: url(../img_team2/character3_img_c4.PNG);
+}
+
+.mainCimg {
+    width: 50%;
+    height: 100%;
+    background-size: 100px;
+    background-color: rgb(224, 18, 15);
+    float: left;
+}
+
+
+#mback1 {
+    background-image: url(../img_team2/character3_img_c1_back.gif);
+}
+
+#mback2 {
+    background-image: url(../img_team2/character3_img_c2_back.gif);
+}
+
+#mback3 {
+    background-image: url(../img_team2/character3_img_c3_back.gif);
+}
+
+#mback4 {
+    background-image: url(../img_team2/character3_img_c4_back.gif);
+}
+
+
+
+.mainCtxt {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    float: left;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: auto;
+}
+
+.profile {
+    padding-right: 40px;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.maincbtn {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+
+.name {
+    font-size: 40px;
+    height: 60px;
+    font-family: 'Sigmar', cursive;
+    margin-bottom: 20px;
+    padding-right: 50px;
+}
+
+#c1name {
+    color: rgb(224, 18, 15);
+}
+
+#c2name {
+    color: rgb(8, 169, 54);
+}
+
+#c3name {
+    color: rgb(240, 150, 190);
+}
+
+#c4name {
+    color: rgb(248, 190, 16);
+}
+
+.stroy {
+    clear: both;
+    position: relative;
+}
+
+.subtxt {
+    position: absolute;
+    width: 100%;
+    padding: 21px;
+    text-align: center;
+    font-size: 41px;
+    font-family: 'Sigmar', cursive;
+    background-image: url(../img_team2/character3_img_pipe.png);
+    background-size: auto 100%;
+}
+
+.bimg {
+    /* float: left; */
+    position: absolute;
+    /* background-color: rgb(255, 255, 255); */
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 800px;
+    height: 1200px;
+    background-position: center;
+    background-image: url(../img_team2/character3_img_story_1.png);
+    background-size: cover;
+
+}
+
+.withetxtbox {
+    width: 80%;
+    height: 550px;
+    position: absolute;
+    margin-top: 200px;
+    left: 10%;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 3;
+    padding: 30px;
+    text-align: center;
+}
+
+.withetxtbox>span:first-child {
+    font-size: 30px;
+    font-family: 'KBO-Dia-Gothic_bold';
+    margin: 20px;
+}
+
+
+footer {
+    clear: both;
+    height: 200px;
+    width: 100%;
+    background-color: gray;
+}
+
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.stroyback {
+    position: absolute;
+    background-image: url(../img_team2/character3_img_mainback.png);
+    background-size: 320px auto;
+    width: 100%;
+    height: 1500px;
+    z-index: 0;
+}

@@ -1,0 +1,308 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    position: relative;
+}
+
+
+
+/* DIV1 첫화면 배경2 + 로고 + 입장이미지 */
+.main {
+    background-image: url(../img_team2/character_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    z-index: 0;
+    position: fixed;
+}
+
+.main2 {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-image: url(../img_team2/character_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-size: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: bgimg 10s infinite;
+    position: fixed;
+}
+
+.in {
+    display: none;
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 500px;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.in>img:hover {
+    transform: scale(1.05);
+}
+
+.logo {
+    position: absolute;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    left: 400px;
+    height: auto;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 150px;
+    height: auto;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(0, -50px);
+    }
+}
+
+.logo1 {
+    animation: bounce 0.5s;
+    animation-duration: 0.5s;
+}
+
+.logo2 {
+    animation: bounce 0.5s;
+    animation-delay: 0.1s;
+}
+
+.logo3 {
+    animation: bounce 0.5s;
+    animation-delay: 0.2s;
+}
+
+.logo4 {
+    animation: bounce 0.5s;
+    animation-delay: 0.3s;
+}
+
+.logo5 {
+    animation: bounce 0.5s;
+    animation-delay: 0.5s;
+}
+
+.logo6 {
+    animation: bounce 0.5s;
+    animation-delay: 0.6s;
+}
+
+.logo7 {
+    animation: bounce 0.5s;
+    animation-delay: 0.7s;
+}
+
+.logo8 {
+    animation: bounce 0.5s;
+    animation-delay: 0.8s;
+}
+
+
+/* DIV2 게임소개 */
+
+.main3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-image: url(../img_team2/character_5.jpg);
+    /* background-repeat: no-repeat;    */
+    background-size: cover;
+    height: 100vh;
+    font-size: 100px;
+    top: 0;
+    left: 0;
+}
+
+.main3Img>img:hover {
+    transform: scale(1.05);
+}
+
+.main3Img {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 410px;
+}
+
+.main4 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.200), rgba(255, 255, 255, 0.200)), url(../img_team2/character_6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-size: 100px;
+    top: 0;
+    left: 0;
+}
+
+@keyframes bgimg {
+    from {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.gameText {
+    position: absolute;
+    background-image: url(../img_team2/character_7.png);
+    background-size: 1200px;
+    text-align: center;
+    width: 1200px;
+    height: 410px; 
+    padding-top: 60px;
+    margin-top: 180px;
+    margin-left: 450px;
+    animation: infoimg 8s;
+}
+
+
+.gameText>h3 {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'KCCMurukmuruk';
+}
+
+.gameText>p {
+    padding-top: 5px;
+    font-size: 28px;
+    font-family: 'SUITE-Regular';
+}
+
+@keyframes infoimg {
+    from {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+}
+
+
+/* 배너 이미지 */
+.imgmove {
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 60px;
+    display: flex;
+    overflow: hidden;
+    width: 800px;
+    /* 이미지들이 들어갈 구역*/
+    border: 5px solid rgb(253, 249, 233);
+    border-radius: 20px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-220%);
+    }
+}
+
+.imgmove img {
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 20px;
+    animation: slide 20s linear infinite;
+}
+
+@font-face {
+    font-family: 'KCCMurukmuruk';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCMurukmuruk.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.h2h2 {
+    padding-top: 135px;
+    margin-left: 220px;
+    font-size: 75px;
+    position: fixed;
+    text-shadow: 2px 2px 0px white;
+    font-family: 'KCCMurukmuruk';
+}
+
+.jumin {
+    text-align: center;
+    margin-top: 220px;
+    margin-left: 1200px;
+    position: fixed;
+}
+
+.jumin img {
+    width: auto;
+    height: 180px;
+    border-radius: 20px;
+}
+
+.jumin img:hover {
+    transform: scale(1.1);
+}
+
+.juminImg {
+    position: absolute;
+    width: 900px;
+    border-radius: 20px;
+    margin-top: 230px;
+    margin-left: 200px;
+}
+
+.index {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 600px;
+    margin-left: 1750px;
+}
+
+.index img:hover {
+    transform: scale(1.5);
+}

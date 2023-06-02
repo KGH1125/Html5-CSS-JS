@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--폰트  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <!-- 스크롤 이벤트를 위해 jquery사용 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script src="./JS_team2/character_1.js" defer></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="css_team2/nav.css">
+    <link rel="stylesheet" href="CSS_team2/character_1.css">
+
+    <title>젤다의 전설</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navLogo">
+            <a href="main.html">
+                <div class="homeLogo"></div>
+            </a>
+        </div>
+
+        <div class="navTitle">
+            <ul>
+                <li>구매</li>
+                <li>Characters</li>
+                <li>지원</li>
+            </ul>
+        </div>
+
+        <div class="navBtn" id="navBtn">
+            <span class="material-symbols-outlined" id="bb">
+                menu
+            </span>
+        </div>
+
+        <div class="navBigBox navhidden" id="navBigBox">
+            <div class="navMenu1">
+                <ul>
+                    <li><a href="">Nintendo Switch OLED</a></li>
+                    <li><a href="">Nintendo Switch </a></li>
+                    <li><a href="">Nintendo Switch Lite</a></li>
+                    <li><a href="">Nintendo Switch OLED</a></li>
+                    <li><a href="">주변기기</a></li>
+                    <li><a href="gamesaleList.html">게임 소프트웨어</a></li>
+                </ul>
+            </div>
+            <div class="navMenu2">
+
+                <ul class="navMenu2ul">
+                    <li>
+                        <a href="character_3.html">
+                            <div class="limitBox">
+                                <div class="navMinBox" id="navMinBox1"></div>
+                            </div>
+                            <span>마리오</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="character_1.html">
+                            <div class="limitBox">
+                                <div class="navMinBox" id="navMinBox2"></div>
+                            </div>
+                            <span>젤다의 전설</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="character_2.html">
+                            <div class="limitBox">
+                                <div class="navMinBox" id="navMinBox3"></div>
+                            </div>
+                            <span>동물의 숲</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="navMenu2ul">
+                    <li>
+                        <a href="">
+                            <div class="limitBox">
+                                <div class="navMinBox" id="navMinBox4"></div>
+                            </div>
+                            <span>스플래툰</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="limitBox">
+                                <div class="navMinBox" id="navMinBox5"></div>
+                            </div>
+                            <span>별의 커비</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="limitBox">
+                                <div class="navMinBox" id="navMinBox6"></div>
+                            </div>
+                            <span>FireEmblem</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navMenu3">
+                <ul>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="qnaBoard.html">문의사항 </a></li>
+                    <li><a href="login.html">로그인</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+
+    <div id="wrap">
+
+
+        <div id="video-container" class="section">
+
+            <a href="#storyArea">
+                <img src="img_team2/character_1_story.png" id="sButton">
+            </a>
+            <a href="#mainImg">
+
+                <img src="img_team2/character_1_character.png" id="cButton">
+            </a>
+            <a href="#movieArea">
+                <img src="img_team2/character_1_movie.png" id="mButton">
+            </a>
+
+            <video id="mainVideo" autoplay loop muted>
+                <source src="img_team2/character_1_zelda_mainVedio.mp4" type="video/mp4">
+
+            </video>
+            <!-- 비디오내부 로고 -->
+            <img src="img_team2/character_1_zelda_mainlogo.png" id="mainlogo">
+
+
+
+
+            <!--음악 재생 버튼이미지 -->
+            <img src="img_team2/character_1_sound.png" id="soundImg">
+            <img src="img_team2/character_1_sound_ON.png" id="playON">
+            <img src="img_team2/character_1_sound_OFF.png" id="playOFF">
+
+            <!-- 여기까지 비디오 div -->
+            <!-- 여기까지 비디오컨테이너 -->
+        </div>
+
+
+        <!--음악파일 -->
+        <audio id="mainAudio" autoplay hidden loop>
+            <source src="img_team2/character_1_zelda-sound.mp3" type="audio/mp3">
+        </audio>
+
+
+
+        <!-- 스토리영역 -->
+
+
+
+        <div class="mainImg5 section" id="storyArea">
+            <img src="img_team2/character_1_story_img.png" id="story_img">
+            <img src="img_team2/character_1_movieLine.png" id="st_line">
+            <img src="img_team2/character_1_scroll_img.png" id="scroll_img">
+            <img src="img_team2/character_1_logo-line4.png" id="st_line2">
+            <img src="img_team2/character_1_logo-line4.png" id="st_line3">
+
+            <div>
+                <img src="img_team2/character_1_story_back.png" id="story_back">
+            </div>
+            <div class="story_text">
+                <p style="font-size:30px; top:33%; left: 36%;" class="s_text">하이랄에 전설처럼 내려오던 한 이야기.</p>
+                <p style="top:40%; left: 32%;" class="s_text">" 언젠간 재앙 가논이 부활할 것이고, 그에 대항하기 위한 가디언들은 대지 아래에 잠들어 있다.</p>
+                <p style="top:42%; left: 32%;" class="s_text">성스러운 힘을 지닌 공주와 어둠을 몰아내는 퇴마의 검을 지닌 선택받은 기사만이 가논을 물리칠 수 있다"
+                </p>
+                <p class="s_text" style="top:50%; left:32%; font-size:20px;">오랜기간 잠들어있던 용사 링크.</p>
+                <p class="s_text" style="top:53%; left:32%; font-size:20px;">누군가의 목소리에 의해 100년만에 잠에서 깨어난다.</p>
+                <p class="s_text" style="top:56%; left:32%; font-size:20px;">오랜 기간동안 잠들어있던 나머지 기억을 잃은 상태였던 링크는</p>
+                <p class="s_text" style="top:59%; left:32%; font-size:20px;">'재앙 가논'에 의해 오염되어 있던 신수를 정화하며 기억을 되찾는다.</p>
+                <p class="s_text" style="top:62%; left:32%; font-size:20px">기억을 되찾은 링크는 젤다와 함께 하이랄 성에 봉인되어 있는 가논을 소멸시킨다.
+                </p>
+                <p class="s_text" style="top:68%; left:32%; font-size:18px">그렇게 하이랄 성에서 가논의 기운이 사라지고, 링크와 젤다는 하이랄 재건을 위해
+                    힘을 모은다.</p>
+                <p class="s_text" style="top:74%; left:35%; font-size:20px; font-weight: bold;">하지만 힘을 모으기도 잠시... 갑작스러운
+                    사건이 벌어지기 시작한다....</p>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- 캐릭터소개div -link -->
+        <div class="mainImg section" id="mainImg">
+
+            <img src="img_team2/character_1_logo_line3.png" id="mainlogline1">
+            <img src="img_team2/character_1_logo_line3.png" id="mainlogline2">
+            <div id="link_infobox">
+                <img src="img_team2/character_1_linkName.png" id="link_name">
+                <p style="top:45%;" class="link_infoText">악을 물리치는 성검을 지닌 용사.</p>
+                <p style="top:60%;" class="link_infoText">과거에 재앙 가논으로부터 하이랄을 구했다.</p>
+                <p style="top:75%;" class="link_infoText">하이랄에 또다시 닥친 천재지변에 맞서 싸우게 된다.</p>
+            </div>
+
+            <img src="img_team2/character_1_link.png" id="img_main_link">
+            <!-- <img src="img/link_info3.png" id="img_link_info" style="display: none;">
+
+        
+            <p class="text_link" style="top:45%; display: none;">악을 물리치는 성검을 지닌 용사.</p>
+            <p class="text_link" style="top:52%; display: none;">과거에 재앙 가논으로부터 하이랄을 구했다.</p>
+            <p class="text_link" style="top:59%; display: none;">하이랄에 또다시 닥친 천재지변에 맞서 싸우게 된다.</p> -->
+
+        </div>
+
+        <!-- 캐릭터소개div2 -zelda -->
+
+        <div class="mainImg2 section">
+            <img src="img_team2/character_1_logo_line3.png" id="mainlogline1">
+            <img src="img_team2/character_1_logo_line3.png" id="mainlogline2">
+            <div id="zelda_infobox">
+                <img src="img_team2/character_1_zeldaName.png" id="zelda_name">
+                <p style="top:45%;" class="zelda_infoText">하이랄 왕국의 공주.</p>
+                <p style="top:60%;" class="zelda_infoText">하이랄 왕가의 혈통들이 선천적으로 지니는 '퇴마의 힘'을 가지고 있다.</p>
+                <p style="top:75%;" class="zelda_infoText">하이랄에 갑작스럽게 발생한 천재지변에 휘말린다.</p>
+            </div>
+
+            <img src="img_team2/character_1_zelda.png" id="img_main_zelda">
+
+        </div>
+
+        <!-- 캐릭터소개div3 -ganondorf -->
+        <div class="mainImg3 section">
+            <img src="img_team2/character_1_logo_line3.png" id="mainlogline1">
+            <img src="img_team2/character_1_logo_line3.png" id="mainlogline2">
+
+            <div id="ganondorf_infobox">
+                <img src="img_team2/character_1_ganondorfName.png" id="ganondorf_name">
+                <p style="top:40%;" class="ganondorf_infoText">여성만 있는 겔드족에선</p>
+                <p style="top:53%;" class="ganondorf_infoText">100년에 한번 남성이 태어난다.</p>
+                <p style="top:66%;" class="ganondorf_infoText">가논돌프는 겔드족에서 100년만에 태어난 남자이다.</p>
+                <p style="top:79%;" class="ganondorf_infoText">하이랄을 습격한 천재지변과 관련이 있는 듯 하다..</p>
+            </div>
+
+            <img src="img_team2/character_1_Ganondorf.png" id="img_main_ganondorf">
+
+
+        </div>
+
+
+
+
+        <!-- 유튜브 -->
+
+        <div class="mainImg6 section" id="movieArea">
+
+            <img src="img_team2/character_1_link_sky.png" id="linksky">
+            <img src="img_team2/character_1_movie_img.png" id="movieImg">
+
+            <img src="img_team2/character_1_movieLine.png" id="movieLine">
+
+            <img src="img_team2/character1_movie_corner.png" id="corner1">
+            <img src="img_team2/character1_movie_corner.png" id="corner2">
+            <img src="img_team2/character1_movie_corner.png" id="corner3">
+            <img src="img_team2/character1_movie_corner.png" id="corner4">
+            <div class="video-container">
+                <div id="video1-box" class="video">
+                    <iframe id="teaser1" width="560" height="315" src="https://www.youtube.com/embed/uHGShqcAHlQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+            <a href="#video-container" id="top-logo-link">
+                <img src="img_team2/character_1_logo3.png" id="top-logo">
+                <img src="img_team2/character_1_TOP.png" id="topText">
+            </a>
+
+
+        </div>
+
+        <!-- divb wrap끝 -->
+    </div>
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+
+
+</body>
+
+</html>

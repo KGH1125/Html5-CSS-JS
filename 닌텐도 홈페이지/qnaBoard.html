@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css_team2/qnaBoard.css">
+    <link rel="stylesheet" href="css_team2/nav.css">
+    <title>QnA</title>
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="navLogo">
+            <a href="main.html">
+                <div class="homeLogo"></div>
+            </a>
+        </div>
+
+        <div class="navTitle">
+            <ul>
+                <li>구매</li>
+                <li>Characters</li>
+                <li>지원</li>
+            </ul>
+        </div>
+
+        <div class="navBtn" id="navBtn">
+            <span class="material-symbols-outlined" id="bb">
+                menu
+            </span>
+        </div>
+
+        <div class="navBigBox navhidden" id="navBigBox">
+            <div class="navMenu1">
+                <ul>
+                    <li><a href="">Nintendo Switch OLED</a></li>
+                    <li><a href="">Nintendo Switch </a></li>
+                    <li><a href="">Nintendo Switch Lite</a></li>
+                    <li><a href="">Nintendo Switch OLED</a></li>
+                    <li><a href="">주변기기</a></li>
+                    <li><a href="gamesaleList.html">게임 소프트웨어</a></li>
+                </ul>
+            </div>
+            <div class="navMenu2">
+
+                <ul class="navMenu2ul">
+                    <li>
+                        <a href="">
+                            <div class="limitBox">
+                                <div class="navMinBox" id="navMinBox1"></div>
+                            </div>
+                            <span>마리오</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="limitBox">
+                                <div class="navMinBox" id="navMinBox2"></div>
+                            </div>
+                            <span>젤다의 전설</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="limitBox">
+                                <div class="navMinBox" id="navMinBox3"></div>
+                            </div>
+                            <span>동물의 숲</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="navMenu2ul">
+                    <li>
+                        <a href="">
+                            <div class="limitBox">
+                                <div class="navMinBox" id="navMinBox4"></div>
+                            </div>
+                            <span>스플래툰</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="limitBox">
+                                <div class="navMinBox" id="navMinBox5"></div>
+                            </div>
+                            <span>별의 커비</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="limitBox">
+                                <div class="navMinBox" id="navMinBox6"></div>
+                            </div>
+                            <span>FireEmblem</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navMenu3">
+                <ul>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="">문의사항 </a></li>
+                    <li><a href="login.html">로그인</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="qna">
+
+        <div class="qnaname">
+            <h3>Q&A 자주 묻는 질문 </h3>
+        </div>
+
+        <div class='qnalist'>
+            <ul>
+                <a href="#">
+                    <li>[Switch] 본체를 충전할 수 없습니다. 어떻게 해야 하나요? </li>
+                </a>
+                <a href="#">
+                    <li>[닌텐도 계정] 닌텐도 계정을 신규 작성하고 싶다.</li>
+                </a>
+                <a href="#">
+                    <li>[Switch] TV 모드로 해도, 영상이 TV에 비치지 않습니다.</li>
+                </a>
+                <a href="#">
+                    <li>[다운로드] 다운로드가 안 됩니다.</li>
+                </a>
+                <a href="#">
+                    <li>[Switch] 본체의 전원이 ON되지 않습니다.</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="marioimg" id="marioimg">
+        <img src="img_team2/qnaBoard_img1.png" id="mario">
+    </div>
+
+    <div id="popup" style="display: none;">
+
+        <div id="header">
+            <!-- <button type="button" id="addBtn"> </button> -->
+            나의 문의 내역
+            <button type="button" id="closeBtn"> × </button>
+        </div>
+
+        <div id="table-container" style="height: 400px; overflow-y: scroll;">
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>글제목</th>
+                        <th>날짜</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                        <td>이런식으로..할거면;; 걍 장사접으세요^^</td>
+                        <td>2023. 03. 26.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>문의드려요</td>
+                        <td>2023. 01. 2.</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>출고언제되나요;;</td>
+                        <td>2022. 10. 14.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="myform" id="myform" style="display: none;">
+        <h3>문의하기 </h3>
+        <p>모든 항목을 반드시 입력해주셔야 문의 접수가 가능합니다.</p>
+        <p>적어주신 정보는 문의처리를 위한 용도로만 이용됩니다.</p>
+        <p></p>
+
+        <div class="myform2">
+
+
+            <form action="" id="formSub">
+
+                분　류 :
+                <select name="select" id="select">
+                    <option value="">선택</option>
+                    <option value="out">회원정보 관리 및 탈퇴</option>
+                    <option value="as">A/S 관련</option>
+                    <option value="account">닌텐도 어카운트 변경/조회</option>
+                    <option value="refund">환불</option>
+                    <option value="etc">기타문의</option>
+                </select>
+                <br>
+                제　목 : <input type="text" name="title" id="title"><br>
+
+                <!-- 내용 -->
+                내　용 : <textarea name="area" id="area"></textarea><br>
+                <input type="submit" value="문의접수" id="submitBtn">
+                <input type="submit" value="취 소" id="closeBtn2">
+            </form>
+            <div id="errorMsg" value="dd"></div>
+        </div>
+    </div>
+
+
+    <!-- 말풍선 -->
+    <div class="bubbleimg">
+        <a href="#">
+            <h1 id="popupBtn">나의문의내역</h1>
+        </a>
+        <img src="img_team2/qnaBoard_img2.png" width="350px">
+    </div>
+
+    <div class="bubbleimg2">
+        <a href="#">
+            <h1 id="popupBtn2">1:1문의하기</h1>
+        </a>
+        <img src="img_team2/qnaBoard_img22.png" width="350px">
+    </div>
+
+
+    <script src="js_team2/qnaBoard.js" defer></script>
+    <script src="js_team2/nav.js"></script>
+</body>
+
+</html>

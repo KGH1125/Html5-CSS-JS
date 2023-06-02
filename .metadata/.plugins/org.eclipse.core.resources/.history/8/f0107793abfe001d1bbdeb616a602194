@@ -1,9 +1,0 @@
-package repositoy;
-
-import domain.MemberVO;
-
-public interface MemberDAO {
-
-	int select_login(MemberVO mvo);
-
-}

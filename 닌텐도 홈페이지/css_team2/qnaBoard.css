@@ -1,0 +1,352 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#nav {
+    height: 40px;
+    background-color: rgb(230, 0, 18);
+}
+
+body {
+    position: relative;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.600),rgba(255, 255, 255, 0.600)),
+        url(../img_team2/qnaBoard_img3.jpg);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* --- QnA자주묻는 질문 영역--- */
+
+.qna {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 80px;
+}
+
+.qnaname {
+    height: 90px;
+    border: 5px solid black;
+    background-color: rgb(230, 0, 18);
+    box-shadow: 10px 10px 0px 5px black;
+    color: white;
+    border-radius: 20px;
+    
+}
+
+.qnaname>h3 {
+  
+    font-size: 50px;
+    text-align: center;
+}
+
+.bubbleimg>a>h3 {
+    top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.qnalist {
+    margin-top: 30px;
+    box-shadow: 10px 10px 0px 5px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.qnalist>ul {
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 20px;
+    width: 700px;
+    height: 255px;
+    list-style: none;
+}
+
+.qnalist li {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+li:hover {
+    color: rgb(230, 0, 18);
+    font-weight: 900;
+
+}
+
+#popupBtn:hover {
+    color: rgb(230, 0, 18);
+    transform: scale(1.05);
+
+}
+
+#popupBtn2:hover {
+    color: rgb(230, 0, 18);
+    transform: scale(1.05);
+
+}
+
+
+td:hover {
+    color: rgb(230, 0, 18);
+
+}
+
+
+#closeBtn:hover::before {
+    content: "닫기";
+    font-size: 18px;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    right: 260px;
+}
+
+/* #addBtn:hover::before {
+    content: "글쓰기";
+    font-size: 15px;
+    position: absolute; 
+    color: rgb(0, 0, 0);
+    left: 125px;
+  }  */
+
+#closeBtn:hover,
+#addBtn:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+#header {
+    color: rgb(230, 0, 18);
+}
+
+/* --- 1:1 질문 영역--- */
+
+
+#popupBtn {
+    font-size: 40px;
+    margin-left: 50px;
+    position: absolute;
+    color: black;
+    margin-top: 100px;
+    margin-left: 66px;
+}
+
+#popupBtn2 {
+    font-size: 40px;
+    margin-left: 50px;
+    position: absolute;
+    color: black;
+    margin-top: 100px;
+    margin-left: 75px;
+}
+
+.bubbleimg {
+    margin-top: 320px;
+    margin-left: 1100px;
+    bottom: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.bubbleimg2 {
+    margin-top: 210px;
+    margin-left: 1500px;
+    bottom: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.marioimg {
+    margin-top: 600px;
+    margin-left: 1400px;
+    bottom: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+/* --- 이미지 --- */
+#mario {
+    width: 400px;
+    height: auto;
+}
+
+.myform {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.266), rgba(255, 255, 255, 0.266)), url(../img_team2/qnaBoard_img3.jpg);
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    border: 5px solid black;
+    font-size: 30px;
+}
+
+.myform>h3 {
+    font-size: 80px;
+}
+
+.myform>p {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#myform {
+
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+textarea {
+    width: 770px;
+    height: 200px;
+    resize: none;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 30px 30px 30px 30px;
+}
+
+textarea,
+input[type="text"] {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#title {
+    padding-left: 30px;
+    right: 200px;
+    height: 50px;
+    width: 800px;
+    font-size: 25px;
+    border-radius: 20px;
+    border-color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+
+#email {
+    padding-left: 30px;
+    right: 200px;
+    height: 50px;
+    width: 800px;
+    font-size: 25px;
+    border-radius: 20px;
+    border-color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+
+#select {
+    padding-left: 30px;
+    right: 200px;
+    height: 50px;
+    width: 400px;
+    font-size: 25px;
+    border-radius: 20px;
+    border-color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+
+
+#popup {
+    font-size: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(230, 0, 18);
+    border-radius: 50px;
+    width: 800px;
+    height: 500px;
+    padding: 30px;
+    padding-bottom: 50px;
+    z-index: 999;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(230, 0, 18);
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+#header {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+#myTable {
+    padding-top: auto;
+    font-size: 20px;
+    margin: auto;
+}
+
+#myTable {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+td {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+
+}
+
+button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background-color: rgb(235, 0, 18);
+    color: white;
+    border-radius: 100%;
+}
+
+
+#submitBtn {
+    margin-top: 10px;
+    border: none;
+    width: 130px;
+    height: 60px;
+    font-size: 30px;
+    background-color: rgb(235, 0, 18);
+    color: white;
+    border-radius: 20px;
+}
+
+#closeBtn2 {
+    margin-top: 10px;
+    border: none;
+    width: 130px;
+    height: 60px;
+    font-size: 30px;
+    background-color: rgb(235, 0, 18);
+    color: white;
+    border-radius: 20px;
+}
+
+#closeBtn2:hover,
+#submitBtn:hover {
+    transform: scale(1.05);
+
+}

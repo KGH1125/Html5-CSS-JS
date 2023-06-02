@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(253, 255, 254, 0.339), rgba(255, 255, 255, 0.259)), url(../img_team2/sign_main_loginpage-background.png);
+    background-color: rgb(255, 255, 211);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    margin-top: 35px;
+    font-size: 50px;
+}
+
+.wrap {
+    border: 1px solid rgba(255, 255, 255, 0.133);
+    background-color: rgba(255, 255, 255, 0.746);
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 600px;
+    text-align: center;
+    height: 690px;
+}
+
+#div_logo{
+    width: 500px;
+    background-color: black;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+#sign_text{
+    padding-top: 50px;
+    font-size: 50px;
+    color: rgba(58, 58, 58, 0.747);
+ 
+}
+#mush_left{
+    position: absolute;
+    width: 4%;
+    left: 40%;
+    top: 6%;
+}
+
+#mush_right{
+    position: absolute;
+    width: 4%;
+    right: 41%;
+    top: 6%;
+}
+
+.idArea {
+    position: relative;
+    top: 50px;
+    width: 500px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+
+}
+
+#userId {
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    border: 0.4px solid rgb(121, 115, 115);
+    border-radius: 15px;
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#userId:focus {
+    background-color: rgba(236, 167, 167, 0.639);
+
+}
+
+#idMsg {
+    position: absolute;
+    top: 93px;
+    font-size: 15px;
+    left: 50px;
+    color: rgb(86, 83, 83);
+}
+
+.passwordArea {
+    width: 500px;
+    height: 90px;
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+}
+
+#userPassword {
+    position: relative;
+    top: 30px;
+    border: 0.4px solid rgb(121, 115, 115);
+    border-radius: 15px;
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#userPassword:focus {
+    background-color: rgba(236, 167, 167, 0.639);
+
+}
+
+.passwordConfirmArea {
+
+    width: 500px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+}
+
+#passwordMsg {
+    position: absolute;
+    top: 83px;
+    font-size: 15px;
+    left: 50px;
+    color: rgb(86, 83, 83);
+
+}
+
+#userPasswordc {
+    position: relative;
+    top: 30px;
+    border: 0.4px solid rgb(121, 115, 115);
+    border-radius: 15px;
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+}
+
+#userPasswordc:focus {
+    background-color: rgba(236, 167, 167, 0.639);
+
+}
+
+
+#passworConfirmdMsg {
+    position: absolute;
+    top: 85px;
+    font-size: 15px;
+    left: 50px;
+    color: rgb(86, 83, 83);
+
+}
+
+.nicknameArea {
+    position: relative;
+    width: 500px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    top: 70px;
+}
+
+#userNickname {
+    position: absolute;
+    left: 50px;
+    bottom: 35px;
+    border: 0.4px solid rgb(121, 115, 115);
+    border-radius: 15px;
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#userNickname:focus {
+    background-color: rgba(236, 167, 167, 0.639);
+
+}
+
+.emailArea {
+
+    width: 500px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+}
+
+#userEmail {
+    position: absolute;
+    left: 50px;
+    bottom: 35px;
+    border: 0.4px solid rgb(121, 115, 115);
+    border-radius: 15px;
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#emailMsg {
+    position: absolute;
+    top: 70px;
+    font-size: 15px;
+    left: 50px;
+    color: rgb(86, 83, 83);
+}
+
+#userEmail:focus {
+    background-color: rgba(236, 167, 167, 0.548);
+
+}
+
+#newsCheck {
+    color: rgb(86, 83, 83);
+
+}
+
+#news {
+    margin-top: 10%;
+}
+
+#signBtn {
+    margin-top: 40px;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.material-symbols-outlined {
+    color: green;
+}

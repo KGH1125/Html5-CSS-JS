@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+html {
+    min-width: 900px;
+}
+
+a {
+    display: block;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+body {
+    font-family: 'Nunito', 'Pacifico', sans-serif;
+}
+nav{
+    background: none;
+}
+.redback{
+    background-color: rgba(230 0 18);
+ }
+/* 메인타이틀 */
+
+.bigimg {
+    top: 0;
+    left: 0;
+    position: relative;
+    transition: width 0.3s;
+    width: calc((100% / 3));
+    height: 100vh;
+    float: left;
+    z-index: 10;
+    transition: width 0.5s;
+    cursor: pointer;
+}
+
+.cimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 5;
+}
+
+.cimg>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 100%;
+    height: auto;
+}
+
+.bimg {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 30px 30px 10px rgba(0, 0, 0, 0.5) inset;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transition: opacity 0.5s;
+}
+
+.bb {
+    z-index: 3;
+}
+
+.backimg1 {
+    background-image: url('../img_team2/main_img_back1.PNG');
+}
+
+#bb1 {
+    background-image: url('../img_team2/main_img_back1_black.png');
+}
+
+.backimg2 {
+    background-image: url('../img_team2/main_img_back2.jpg');
+}
+
+#bb2 {
+    background-image: url('../img_team2/main_img_back2_black.jpg');
+}
+
+.backimg3 {
+    background-image: url('../img_team2/main_img_back3.webp');
+}
+
+#bb3 {
+    background-image: url('../img_team2/main_img_back3_black.webp');
+}
+
+
+.shodowbox {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 0px 100px rgba(0, 0, 0, 0.5) inset;
+}
+
+.backimg>img {
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: auto;
+}
+
+
+/* 서브 타이틀 */
+@keyframes slide {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 1000px 1000px;
+    }
+}
+
+.moveback {
+    animation: slide 15s linear infinite;
+}
+
+.sub {
+    width: 100%;
+    height: 100vh;
+    float: left;
+    position: relative;
+    background-image: url(../img_team2/character3_img_mainback2.png);
+}
+
+.minibox {
+    transition: left 0.5s, transform 0.5s;
+    cursor: pointer;
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 10px rgba(100, 100, 100, 0.5);
+}
+
+.whithBox {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0.0;
+    transition: opacity 0.3s;
+}
+
+.left2 {
+    transform: translate(0, -50%) scale(0.6);
+    left: 10%;
+    z-index: 1;
+}
+
+.left1 {
+    transform: translate(0, -50%) scale(0.8);
+    left: 20%;
+    z-index: 3;
+}
+
+.canter {
+    transform: translate(0, -50%) scale(1);
+    left: 35%;
+    z-index: 5;
+}
+
+.right1 {
+    transform: translate(0, -50%) scale(0.8);
+    left: 50%;
+    z-index: 4;
+}
+
+.right2 {
+    transform: translate(0, -50%) scale(0.6);
+    left: 60%;
+    z-index: 2;
+}
+
+.ssmollbox {
+    transform: translate(0, -50%) scale(0.3);
+    left: 35%;
+    z-index: 0.5;
+}
+
+.cardbox1 {
+    background-image: url('../img_team2/main_img_sub1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.cardbox2 {
+    background-image: url('../img_team2/main_img_sub2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cardbox3 {
+    background-image: url('../img_team2/main_img_sub4.jpg');
+    background-size: cover;
+    background-position: left;
+}
+
+.cardbox4 {
+    background-image: url('../img_team2/main_img_sub3.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.cardbox5 {
+    background-image: url('../img_team2/main_img_sub5.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.cardbox6 {
+    background-image: url('../img_team2/main_img_sub6.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.slideBtn {
+    color:  white;
+    position: absolute;
+    background: none;
+    width: 50px;
+    height: 50px;
+    font-size: 100px;
+    top: 50%;
+    z-index: 15;
+    border: none;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.slideBtn>i {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 30px;
+}
+
+.leftBtn {
+    left: 5%;
+}
+
+.rightBtn {
+    right: 5%;
+}
+
+.footer {
+    clear: both;
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
+
+.section {
+    height: 100vh;
+}

@@ -1,0 +1,153 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  /* opacity: 0.5; */
+}
+
+body {
+  background-image: linear-gradient(rgba(253, 255, 254, 0.549), rgba(255, 255, 255, 0.612)), url(../img_team2/sign_loginbackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+
+}
+
+#pp {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+}
+
+
+.ppdiv {
+  margin-top: 40px;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+#lbox {
+  width: 50%;
+  height: 100%;
+
+  float: left;
+}
+
+#rbox {
+  width: 50%;
+  height: 100%;
+
+  float: left;
+}
+
+#box1-1 {
+  width: 100%;
+  margin-top: 100px;
+  float: left;
+}
+
+#box1-1 a>img {
+  width: 300px;
+  transition: all 0.3s ease-in-out;
+}
+
+#box1-1 a>img:hover {
+  transform: scale(1.1);
+}
+
+.charImg1-1 {
+  width: 100%;
+  float: left;
+}
+
+.charImg1-1>img {
+  width: 200px;
+  height: auto;
+}
+
+#imgGif1 {
+  width: 70px;
+  left: 430px;
+}
+
+#imgGif2 {
+  width: 80px;
+  padding-left: 590px;
+}
+
+#imgText1 {
+  width: 100px;
+  left: 400px;
+}
+
+#imgText2 {
+  width: 150px;
+  right: 300px;
+}
+
+.backimg{
+  position: absolute;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(0, -100px);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  75% {
+    transform: translate(0, -50px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.bounce {
+  animation: bounce 1s;
+}
+
+
+@keyframes bounceBox {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  15% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(0, -100px);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  75% {
+    transform: translate(0, -20px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.bounceBox {
+  animation: bounceBox 1s;
+}
+
+footer {
+  clear: both;
+}
