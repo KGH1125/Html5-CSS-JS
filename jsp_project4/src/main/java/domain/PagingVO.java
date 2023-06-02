@@ -1,0 +1,60 @@
+package domain;
+
+public class PagingVO {
+
+	private int pageNo;//하단에 나오는 번호
+	private int qty;//한 페이지의 나타낼 게시글 수
+	private String type;//한 페이지의 나타낼 게시글 수
+	private String keyword;//한 페이지의 나타낼 게시글 수
+	
+	public PagingVO() { //기본값설정
+		this(1,10);
+		
+	}
+
+	public PagingVO(int pageNo, int qty) {
+		this.pageNo = pageNo;
+		this.qty = qty;
+	}
+
+	public String[] getTypeToArray() {
+		return this.type == null? new String[] {}:this.type.split("");
+	}
+	
+	public int getPageStart() {
+		return (this.pageNo-1)*10;
+	}
+	
+	public int getPageNo() {
+		return pageNo;
+	}
+
+	public void setPageNo(int pageNo) {
+		this.pageNo = pageNo;
+	}
+
+	public int getQty() {
+		return qty;
+	}
+
+	public void setQty(int qty) {
+		this.qty = qty;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getKeyword() {
+		return keyword;
+	}
+
+	public void setKeyword(String keyword) {
+		this.keyword = keyword;
+	}
+	
+}

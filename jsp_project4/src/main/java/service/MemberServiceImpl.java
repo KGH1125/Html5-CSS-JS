@@ -1,0 +1,57 @@
+package service;
+
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import domain.MemberVO;
+import repositoy.MemberDAO;
+import repositoy.MemberDAOImpl;
+
+public class MemberServiceImpl implements MemberService {
+
+	private static final Logger log = LoggerFactory.getLogger(MemberServiceImpl.class);
+	public MemberDAO mdao;
+
+	public MemberServiceImpl() {
+		mdao = new MemberDAOImpl();
+	}
+
+	@Override
+	public int select_id(MemberVO mvo) {
+		log.info("->MemberServiceImple : select_id");
+		return mdao.select_id(mvo);
+	}
+
+	@Override
+	public MemberVO select_login(MemberVO mvo) {
+		log.info("->MemberServiceImple : select_login");
+		return mdao.select_login(mvo);
+	}
+
+	@Override
+	public int join(MemberVO mvo) {
+		log.info("->MemberServiceImple : join");
+		return mdao.insert(mvo);
+	}
+
+	@Override
+	public int edit(MemberVO mvo) {
+		log.info("->MemberServiceImple : edit");
+		return mdao.update(mvo);
+	}
+
+	@Override
+	public int lastLogin(String id) {
+		log.info("->MemberServiceImple : lastLogin");
+		return mdao.updateLast_login(id);
+	}
+
+	@Override
+	public List<MemberVO> getlist() {
+		log.info("->MemberServiceImple : getlist");
+		return mdao.selectList();
+	}
+
+}
