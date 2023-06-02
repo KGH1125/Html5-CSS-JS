@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>글쓰기</title>
+<style type="text/css">
+.mainBox {
+	text-align: center;
+	/* 	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%); */
+}
+
+.titleinput {
+	width: 300px;
+	height: 14px;
+}
+</style>
+</head>
+<body>
+
+	<div class="mainBox">
+		<h3>글쓰기</h3>
+		<form action="/brd/register" method="post"
+			enctype="multipart/form-data">
+			<input type="hidden" name="writer" value=${ses.id }
+				> <input type="text" name="title" class="titleinput"
+				placeholder="제목을 입력해주세요"><br>
+			<textarea rows="3" cols="35" name="content" placeholder="내용을 입력해 주세요"></textarea>
+			<br> <span>이미지</span><br> <input type="file" id="file"
+				name="img_file"
+				accept="image/png,image/jpeg,image/bmp,image/gif,image/jpg"><br>
+			<button type="submit">완료</button>
+		</form>
+		<a href="/brd/page"><button type="button">취소</button></a>
+	</div>
+</body>
+</html>

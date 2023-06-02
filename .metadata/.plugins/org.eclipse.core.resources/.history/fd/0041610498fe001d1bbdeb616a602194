@@ -1,0 +1,58 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.mainbox {
+	width: 400px;
+	height: 400px;
+	border: 1px solid black;
+	border-radius: 10%;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	padding: 50px;
+}
+
+.tspan {
+	display: inline-block;
+	width: 80px;
+	text-align: left;
+}
+
+.joinbtn {
+	width: 260px;
+	height: 50px;
+	color: white;
+	background-color: gray;
+	font-size: 15px;
+	border: none;
+	border-radius: 10px
+}
+</style>
+</head>
+<body>
+	<div class="mainbox">
+		<form action="/mem/join" method="post">
+			<h3>회원가입</h3>
+			<br> <span class="tspan">아이디</span><input type="text" name="id"><br>
+			<span class="tspan">비밀번호</span><input type="password" name="password"><br>
+			<span class="tspan">이메일</span><input type="email" name="eamil"><br>
+			<br>
+			<button class="joinbtn" type="submit">완료</button>
+		</form>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+package domain;
+
+public class BoardVO {
+	
+	private int bno;
+	private String title;
+	private String content;
+	private String img_file;
+	private String writer;
+	private String reg_date;
+	private String last_modify;
+	private int read_count;
+	
+	
+}

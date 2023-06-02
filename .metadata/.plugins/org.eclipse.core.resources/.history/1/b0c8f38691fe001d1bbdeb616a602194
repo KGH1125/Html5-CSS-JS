@@ -1,0 +1,25 @@
+package domain;
+
+public class BoardVO {
+	
+	private int bno;
+	private String title;
+	private String content;
+	private String img_file;
+	private String writer;
+	private String reg_date;
+	private String last_modify;
+	private int read_count;
+	
+	public BoardVO() {}
+
+	public BoardVO(String title, String content, String img_file, String writer) {
+		this.title = title;
+		this.content = content;
+		this.img_file = img_file;
+		this.writer = writer;
+	}
+	
+	
+	
+}

@@ -1,0 +1,27 @@
+package service;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import domain.MemberVO;
+import repositoy.MemberDAO;
+import repositoy.MemberDAOImpl;
+
+public class MemberServiceImpl implements MemberService {
+	
+	private static final Logger log = LoggerFactory.getLogger(MemberServiceImpl.class);
+	public MemberDAO mdao;
+	
+	
+	public MemberServiceImpl() {
+		mdao=new MemberDAOImpl();
+	}
+
+
+	@Override
+	public int select_login(MemberVO mvo) {
+		log.info("->MemberServiceImple : select_login");
+		return mdao.select_login(mvo);
+	}
+
+}

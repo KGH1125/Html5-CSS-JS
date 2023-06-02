@@ -1,0 +1,13 @@
+package service;
+
+import domain.MemberVO;
+
+public interface MemberService {
+
+	int select_id(MemberVO mvo);
+
+	MemberVO select_login(MemberVO mvo);
+
+	int join(MemberVO mvo);
+
+}

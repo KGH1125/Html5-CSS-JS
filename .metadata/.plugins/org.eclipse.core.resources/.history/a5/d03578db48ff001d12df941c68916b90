@@ -1,0 +1,14 @@
+package repositoy;
+
+import java.util.List;
+
+import domain.BoardVO;
+import domain.PagingVO;
+
+public interface BoardDAO {
+
+	List<BoardVO> paglist(PagingVO pgvo);
+
+	int selectTotal(PagingVO pgvo);
+
+}

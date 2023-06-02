@@ -1,0 +1,17 @@
+package repositoy;
+
+import org.apache.ibatis.session.SqlSession;
+
+import domain.MemberVO;
+
+public class MemberDAOImpl implements MemberDAO {
+
+	private SqlSession sql;
+	private String NS = "MemberMapper.";
+	@Override
+	public int select_login(MemberVO mvo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

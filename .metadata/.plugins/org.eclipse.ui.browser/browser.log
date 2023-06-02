@@ -1,0 +1,17 @@
+
+5월 31, 2023 09:44:00.936 NEW SESSION
+5월 31, 2023 09:44:00.937 [8924:4636:0531/094400.935:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+5월 31, 2023 11:52:23.204 [3164:10896:0531/115223.204:ERROR:interface_endpoint_client.cc(696)] Message 0 rejected by interface blink.mojom.WidgetHost
+5월 31, 2023 12:09:51.766 [4648:1504:0531/120951.766:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 31, 2023 12:09:51.766 [4648:1504:0531/120951.766:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 31, 2023 12:09:51.766 [4648:1504:0531/120951.766:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 31, 2023 12:09:51.766 [4648:1504:0531/120951.766:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 31, 2023 12:09:51.766 [4648:1504:0531/120951.766:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 31, 2023 12:10:20.485 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 31, 2023 12:12:50.560 [4648:1504:0531/121250.560:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 31, 2023 12:12:50.560 [4648:1504:0531/121250.560:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 31, 2023 12:12:50.560 [4648:1504:0531/121250.560:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 31, 2023 12:12:50.560 [4648:1504:0531/121250.560:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 31, 2023 12:12:50.560 [4648:1504:0531/121250.560:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 31, 2023 12:12:50.560 [4648:1504:0531/121250.560:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 31, 2023 12:12:50.560 [4648:1504:0531/121250.560:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)

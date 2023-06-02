@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="MemberMapper">
+	<select id="selectId" parameterType="mvo" resultType="int">
+		select
+		count(*) from member where id = #{id}
+	</select>
+	<select id="selectLogin" parameterType="mvo" resultType="mvo">
+		select *
+		from member where id = #{id} and password = #{password}
+	</select>
+	<insert id="join" parameterType="mvo">
+		insert into
+		member(id,password,email) values(#{id},#{password},#{email})
+	</insert>
+	<update id="updateOne" parameterType="mvo">
+		update member set
+		password = #{password}, email = #{email} where id = #{id}
+	</update>
+	<update id="last" parameterType="String">
+		update p3_member set last_logout = now() where id=#{id}
+	</update>
+</mapper>
